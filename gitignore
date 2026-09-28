@@ -1,0 +1,9 @@
+data/shifted_test/*.pt
+data/cifar-10-batches-py/
+data/*.tar.gz
+models/*.pt
+results/metrics/logits_*.npy
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
