@@ -25,12 +25,11 @@ SHIFT_TYPES = ["noise", "blur", "brightness", "rotation"]
 
 # severity 1..4 (index 0 = severity 1)
 SEVERITY_PARAMS = {
-    "noise":      [0.02, 0.05, 0.08, 0.12],   # Gaussian noise sigma
-    "blur":       [0.5, 1.0, 1.5, 2.5],       # Gaussian blur sigma
-    "brightness": [1.3, 1.6, 2.0, 2.5],       # brightness factor (increase only)
-    "rotation":   [5, 12, 20, 35],            # degrees
+    "noise":      [0.02, 0.04, 0.06, 0.09],
+    "blur":       [0.4, 0.7, 1.0, 1.5],
+    "brightness": [1.2, 1.4, 1.6, 1.8],
+    "rotation":   [5, 12, 20, 35],        # unchanged
 }
-
 
 def apply_shift(images, shift_type, severity, seed=SEED):
     """images: float tensor (N,3,H,W) in [0,1]. Returns shifted images in [0,1].
