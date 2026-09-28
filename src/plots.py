@@ -32,10 +32,16 @@ import seaborn as sns
 
 sns.set_theme(style="whitegrid", context="paper", font_scale=1.1)
 
-RESULTS_CSV = "results/metrics/full_results.csv"
-RC_CURVE_DIR = "results/metrics/rc_curves"
-FIGURE_DIR = "results/figures"
-TABLE_DIR = "results/metrics/tables"
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+METRICS_DIR = PROJECT_ROOT / "results" / "metrics"
+
+RESULTS_CSV = METRICS_DIR / "full_results.csv"
+RC_CURVE_DIR = METRICS_DIR / "rc_curves"
+FIGURE_DIR = PROJECT_ROOT / "results" / "figures"
+TABLE_DIR = METRICS_DIR / "tables"
 
 SHIFT_ORDER = ["noise", "blur", "brightness", "rotation"]
 SEVERITIES_TO_PLOT_IN_RC = [0, 2, 4]  # keep risk-coverage subplots readable

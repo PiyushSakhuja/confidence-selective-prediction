@@ -93,10 +93,12 @@ def coverage_controlled_thresholds(calib_confidences, target_coverages):
 # ---------------------------------------------------------------------
 if __name__ == "__main__":
     import pandas as pd
+    from pathlib import Path
 
-    df = pd.read_csv("results/metrics/dummy_predictions.csv")
-    calib_df = df[df.shift_type == "calibration"]
+    PROJECT_ROOT = Path(__file__).resolve().parent.parent 
+    CALIB_PATH = PROJECT_ROOT / "results" / "metrics" / "calib_predictions.csv"
 
+    calib_df = pd.read_csv(CALIB_PATH)
     print(f"Calibration set size: {len(calib_df)}")
 
     # --- Test 1: fixed_threshold basic sanity ---
