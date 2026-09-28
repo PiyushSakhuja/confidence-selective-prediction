@@ -20,9 +20,7 @@ models/*
 !models/.gitkeep
 
 # Generated results
-results/metrics/*
-results/figures/*
-results/tables/*
+
 
 # Large ML files
 *.pt

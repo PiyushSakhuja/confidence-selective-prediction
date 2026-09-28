@@ -1,0 +1,11 @@
+confidence_type,policy,target_coverage,threshold
+raw,fixed,0.9,0.4804529786109924
+raw,coverage_controlled,0.7,0.7308243513107301
+raw,coverage_controlled,0.8,0.6065357089042662
+raw,coverage_controlled,0.9,0.4804529786109924
+raw,coverage_controlled,0.95,0.39040664434432987
+calibrated,fixed,0.9,0.46156433199999997
+calibrated,coverage_controlled,0.7,0.7036741020000001
+calibrated,coverage_controlled,0.8,0.58294766
+calibrated,coverage_controlled,0.9,0.46156433199999997
+calibrated,coverage_controlled,0.95,0.3723626695000002
