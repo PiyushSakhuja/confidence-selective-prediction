@@ -68,10 +68,10 @@ Shifts are applied to raw images in the [0, 1] range, output clipped to [0, 1], 
 | Severity | Noise (sigma) | Blur (sigma) | Brightness (factor) | Rotation (degrees) |
 |---:|---:|---:|---:|---:|
 | 0 (clean) | none | none | none | none |
-| 1 | 0.02 | 0.5 | 1.3 | 5 |
-| 2 | 0.05 | 1.0 | 1.6 | 12 |
-| 3 | 0.08 | 1.5 | 2.0 | 20 |
-| 4 | 0.12 | 2.5 | 2.5 | 35 |
+| 1 | 0.02 | 0.4 | 1.2 | 5 |
+| 2 | 0.04 | 0.7 | 1.4 | 12 |
+| 3 | 0.06 | 1.0 | 1.6 | 20 |
+| 4 | 0.09 | 1.5 | 1.8 | 35 |
 
 Implementation details:
 - Noise: add `N(0, sigma^2)` per pixel, seeded with 42.
